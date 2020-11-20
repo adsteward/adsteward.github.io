@@ -9,6 +9,12 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/illustrated_circle.PNG" />
+    <script language="JavaScript">
+      var frmvalidator = new Validator("contactform");
+      frmvalidator.addValidation("name","req","Please provide your name");
+      frmvalidator.addValidation("email","req","Please provide your email");
+      frmvalidator.addValidation("email","email", "Please enter a valid email address");
+    </script>;
   </head>
 
   <body>
@@ -23,8 +29,9 @@
         <div class="col left"></div>
         <div class="description-block">
           <h3>Who Am I?</h3>
-          <p class="description">Hiya! I'm Adeline, a senior at Macalester College majoring in Computer Science with minors in Mathematics and Media & Cultural Studies.</p>
-          <p class="description">In my free time you can find me watching movies 🎥, cycling 🚴‍♀️, puzzling 🧩, cooking 👩‍🍳, and occasionally even coding 👩‍💻</p>
+          <p class="description">👋 Hiya! I'm Adeline, a senior at Macalester College majoring in 
+            Computer Science with minors in Mathematics and Media & Cultural Studies. Just <span class="out-text">out</span> in here building pretty things, solving complicated problems, and having fun!</p>
+          <p class="description">In my free time you can find me watching movies 🎥, cycling 🚴‍♀️, puzzling 🧩, playing water polo 🤽‍♀️, cooking 👩‍🍳, and occasionally even coding 👩‍💻</p>
         </div>
         <div>
           <h3>What Have I Been Working On?</h3>
@@ -85,7 +92,7 @@
                   <a href="https://github.com/adsteward/dragAndDropTodos" target="_blank"> <i class="fab fa-github-square fa-2x github-logo"></i></a>
               </div>
               <p>
-                Web to-do app for which I created drag and drop functionality
+                Web to-do app for which I created drag and drop functionality. (Very In Progress)
               </p>
               <p class="tools">React, JavaScript</p>
             </div>
@@ -116,5 +123,15 @@
       </div>
    
     </div>
+    <form method="post" name="contact_form"
+action="contact-form-handler.php">
+    Your Name:
+    <input type="text" name="name">
+    Email Address:
+    <input type="text" name="email">
+    Message:
+    <textarea name="message"></textarea>
+    <input type="submit" value="Submit">
+</form>
   </body>
 </html>
