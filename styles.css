@@ -3,6 +3,14 @@
   background-color: white;
 }
 
+p {
+  font-size: larger;
+}
+
+a {
+  font-size: larger;
+}
+
 header {
   background-color: white;
   width: (100% - 20px);
@@ -24,13 +32,13 @@ h1 {
   margin: 0;
 }
 
-h2 {
+header h2 {
   font-size: 53px;
-
   font-weight: 100;
   margin: 0;
 }
 
+h2,
 h3,
 h4 {
   font-weight: 500;
@@ -50,26 +58,26 @@ h5 {
 }
 
 .profile-pic {
-  width: 300px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 2; /* Stay on top */
-  top: 0; /* Stay at the top */
+  width: 300px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
   right: 0;
 
-  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-x: hidden;
   padding-top: 20px;
   margin-top: 20px;
   margin-right: 20px;
 }
 
 .side {
-  width: 200px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 225px; /* Stay at the top */
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 225px;
   right: 0;
   height: 175px;
-  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-x: hidden;
   padding-top: 20px;
   margin-top: 20px;
   margin-right: 70px;
@@ -85,23 +93,8 @@ h5 {
   bottom: 0;
 }
 
-/* The navigation menu links
-.side a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-
- /* When you mouse over the navigation links, change their color */
-/*.side a:hover {
-  color: #f1f1f1;
-} */
-
-/* Style page content */
 .main {
-  margin-right: 320px; /* Same as the width of the sidebar */
+  margin-right: 320px; /* Same as the width of the sidebar + margin */
   padding: 0px 10px;
 }
 
@@ -114,6 +107,7 @@ h5 {
   }
 }
 
+/* when in a smaller screen */
 @media (max-width: 1000px) {
   .description-block {
     width: 100%;
@@ -128,6 +122,20 @@ h5 {
 
   .side {
     margin-right: 55px;
+  }
+
+  p {
+    font-size: 28px;
+  }
+
+  a {
+    font-size: 24px;
+  }
+
+  h3,
+  h4,
+  h5 {
+    font-size: 30px;
   }
 }
 
