@@ -1,40 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Adeline</title>
-  <meta name="description" content="Adeline">
+    <title>adeline</title>
+    <meta name="description" content="adeline" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/illustrated_circle.PNG" />
+  </head>
 
-  <link rel="stylesheet" href="styles.css">
-
-</head>
-
-<body>
-    <div class="wrapper">
-<div class="row">
-    <div class="col left">
+  <body>
     <header>
-        <h4>Adeline Steward-Nolan</h4>
+      <h1>adeline</h1>
+      <h2>steward-nolan</h2>
+      <!-- <h5>Macalester Computer Science '21</h5> -->
     </header>
-        <div>
-            Who am I?
+    <div class="main">
+      
+       
+        <div class="col left"></div>
+        <div class="description-block">
+          <h3>Who Am I?</h3>
+          <p class="description">Hiya! I'm Adeline, a senior at Macalester College majoring in Computer Science with minors in Mathematics and Media & Cultural Studies.</p>
+          <p class="description">In my free time you can find me watching movies 🎥, cycling 🚴‍♀️, puzzling 🧩, cooking 👩‍🍳, and occasionally even coding 👩‍💻</p>
         </div>
         <div>
-            Some things I've made:
+          <h3>What Have I Been Working On?</h3>
+          <div class="project-grid">
+            <div class="project project-1">
+              <div class="project-header">
+                <h4>New Favorites</h4>
+                <a href="https://github.com/adsteward/new-favorite" target="_blank"> <i class="fab fa-github-square fa-2x github-logo"></i></a>
+              </div>
+              
+              <img
+                src="assets/new-favorite-screenshot.png"
+                alt="New favorite screenshot"
+                width="400px"
+              />
+              <p>
+                Web app made with the Spotify API to create playlists of
+                recommended songs based on listening history and filters
+              </p>
+              <p class="tools">React, JavaScript, Bootstrap</p>
+            </div>
+            <div class="project project-2">
+              <div class="project-header">
+                <h4>Counterfeit Convo Creator</h4>
+                <a href="https://github.com/adsteward/conterfeit-convo-creator" target="_blank"> <i class="fab fa-github-square fa-2x github-logo"></i></a>
+              </div>
+              <img
+                src="assets/ccc-screenshot.png"
+                alt="New favorite screenshot"
+                width="400px"
+              />
+              <p>
+                Web app where users can create fake IOS-style text conversations
+              </p>
+              <p class="tools">Angular, TypeScript, Bootstrap</p>
+            </div>
+            <div class="project project-3">
+              <div class="project-header">
+                <h4>Florish</h4>
+                <a href="https://github.com/adsteward/florish" target="_blank"> <i class="fab fa-github-square fa-2x github-logo"></i></a>
+              </div>
+              <img
+                src="assets/florish_image.png"
+                alt="New favorite screenshot"
+                width="150px"
+                style="display: block; margin-left: auto; margin-right: auto;"
+              />
+              <p>
+                A cross-platform mobile app that uses an interactive plant that grows + sickens to discourage binge
+                drinking
+              </p>
+              <p class="tools">Flutter, Dart</p>
+            </div>
+            <div class="project project-4">
+              <div class="project-header">
+                <h4>Todos</h4>
+                <span style="color: white; margin: 0; padding: 0;">
+                  <a href="https://github.com/adsteward/dragAndDropTodos" target="_blank"> <i class="fab fa-github-square fa-2x github-logo"></i></a>
+              </div>
+              <p>
+                Web to-do app for which I created drag and drop functionality
+              </p>
+              <p class="tools">React, JavaScript</p>
+            </div>
+          </div>
         </div>
-    </col>
-</div>
-<div class="col right">
-    <img src="assets/adelineStewardNolan.jpg" alt="Photo of Adeline" width="100px">
-</div>
-
-    
+      </div>
+    </div>
+    <img
+        class="profile-pic"
+        src="assets/three.png"
+        alt="Photo of Adeline"
+        width="300px"
+      />
+    <div class="side">
+      
+      <div class="side-text">
+        <!-- <i class="fas fa-map-marker-alt"></i> St. Paul, MN & Chicago, IL
+        <br /> -->
+        <i class="fab fa-github-square fa-lg"></i>
+        <a href="https://github.com/adsteward" target="_blank">GitHub</a> <br />
+        <i class="fab fa-linkedin fa-lg"></i>
+        <a href="https://www.linkedin.com/in/adeline-steward-nolan-141808187/" target="_blank">LinkedIn</a><br />
+        <i class="fas fa-file fa-lg"></i>
+        <a href="assets/AdelineStewardNolanResume.pdf" target="_blank">Resume</a>
+        <br />
+        <i class="fas fa-paper-plane"></i>
+        Contact Me
+      </div>
    
-
-</div>
-</div>
-
-</body>
+    </div>
+  </body>
 </html>
