@@ -32,6 +32,10 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-size: 28px;
+}
+
 header h2 {
   font-size: 53px;
   font-weight: 100;
